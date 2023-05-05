@@ -1,0 +1,44 @@
+li {
+    list-style-type: none;
+}
+
+.my_header-navbar {
+    background-color: #f4f5f6;
+    height: 8vh;
+}
+
+.my_small-logo {
+    width: 45px;
+    aspect-ratio: 1;
+}
+
+.my_logo {
+    display: none;
+}
+
+.my_bg-grey {
+    background-color: #e2e2e2;
+}
+
+.my_text-orange {
+    color: #fb8d00;
+}
+
+ul > li:not(:last-child) {
+    display: none;
+}
+
+/* LG Layout */
+@media screen and (min-width: 992px) {
+    ul > li:not(:last-child) {
+        display: inline;
+    }
+
+    .my_small-logo {
+        display: none;
+    }
+
+    .my_logo {
+        display: inline;
+    }
+}
