@@ -52,7 +52,6 @@ main aside > nav.my_navbar ul > li > span {
     color: #fb8d00;
 }
 
-
 /* Responsive Layout */
 /* MD Layout (from 768px to 992 px */
 @media screen and (min-width: 768px) {
@@ -85,5 +84,9 @@ main aside > nav.my_navbar ul > li > span {
     
     #content-section {
         width: calc(100vw - 120px);
+    }
+
+    .my_w-40 {
+        width: 40% !important;
     }
 }
