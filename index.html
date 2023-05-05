@@ -88,15 +88,58 @@
                                     <i class="fa-solid fa-plus"></i>
                                 </button>
 
+                                <!-- Offcanvas Add New Student Form -->
                                 <div class="offcanvas offcanvas-end text-black w-100 my_w-40" tabindex="-1" id="offcanvasForm" aria-labelledby="offcanvasFormLabel">
                                     <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title" id="offcanvasFormLabel">Offcanvas</h5>
+                                        <h5 class="offcanvas-title" id="offcanvasFormLabel">Inserisci un nuovo studente</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                     </div>
                                     <div class="offcanvas-body">
-                                        <div>
-                                            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-                                        </div>
+                                        <form class="row g-3">
+                                            <div class="col-12 col-md-6">
+                                                <label for="inputName" class="form-label">Nome</label>
+                                                <input type="text" class="form-control" id="inputName" maxlength="20" required>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <label for="inputSurname" class="form-label">Cognome</label>
+                                                <input type="text" class="form-control" id="inputSurname" maxlength="20" required>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="inputEmail" class="form-label">Email</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                                    <input type="mail" class="form-control" aria-label="Email" aria-describedby="basic-addon1" maxlength="100" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="inputAddress" class="form-label">Indirizzo</label>
+                                                <input type="text" class="form-control" id="inputAddress" maxlength="100" required>
+                                            </div>
+                                            <div class="col-12 col-md-5">
+                                                <label for="inputCity" class="form-label">Città</label>
+                                                <input type="text" class="form-control" id="inputCity" maxlength="20" required>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                                <label for="inputCountry" class="form-label">Provincia</label>
+                                                <input type="text" class="form-control" id="inputCountry" maxlength="20" required>
+                                            </div>
+                                            <div class="col-12 col-md-3">
+                                                <label for="inputZipCode" class="form-label">CAP</label>
+                                                <input type="text" class="form-control" id="inputZipCode" minlength="5" maxlength="5" required>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="formFile" class="form-label">Foto</label>
+                                                <input class="form-control" type="file" id="formFile" required>
+                                            </div>
+                                            <div class="col-12">
+                                                <input type="checkbox" required>
+                                                <label for="infoConfirm">Seleziona per accettare i termini e le condizioni del servizio.</label>
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="submit" class="btn btn-primary">Salva</button>
+                                                <button type="reset" class="btn btn-warning">Svuota</button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
