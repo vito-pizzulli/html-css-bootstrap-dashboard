@@ -24,12 +24,16 @@ header > nav.my_navbar ul > li:not(:last-child) {
 main aside > nav.my_navbar {
     background-color: #10263c;
     background-image: url(../img/sidebar-bg.png);
-    width: 80px;
+    width: 60px;
     height: calc(100vh - 70px);
 }
 
+main aside > nav.my_navbar ul > li > span {
+    display: none;
+}
+
 main section.my_content {
-    width: calc(100vw - 80px);
+    width: calc(100vw - 60px);
     height: calc(100vh - 70px);
 }
 
@@ -56,11 +60,14 @@ main section.my_content {
     }
 
     main aside > nav.my_navbar {
-        width: 160px;
+        width: 120px;
     }
 
-     mainsection.my_content {
-    width: calc(100vw - 80px);
-    height: calc(100vh - 70px);
+    .mainsection.my_content {
+    width: calc(100vw - 120px);
+    }
+
+    main aside > nav.my_navbar ul > li > span {
+        display: inline;
     }
 }
