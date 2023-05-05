@@ -1,3 +1,4 @@
+/* Element Properties */
 li {
     list-style-type: none;
     cursor: pointer;
@@ -32,11 +33,17 @@ main aside > nav.my_navbar ul > li > span {
     display: none;
 }
 
-main section.my_content {
+#content-section {
     width: calc(100vw - 60px);
     height: calc(100vh - 70px);
 }
 
+#summary-bar {
+    background-color: #196bda;
+}
+
+
+/* Utility */
 .my_bg-grey {
     background-color: #e2e2e2;
 }
@@ -45,7 +52,16 @@ main section.my_content {
     color: #fb8d00;
 }
 
-/* LG Layout */
+
+/* Responsive Layout */
+/* MD Layout (from 768px to 992 px */
+@media screen and (min-width: 768px) {
+    #content-section div.row > div.col:first-child {
+        order: 1;
+    }
+}
+
+/* LG Layout (from 992px to higher resolutions */
 @media screen and (min-width: 992px) {
     header > nav.my_navbar ul > li:not(:last-child) {
         display: inline;
@@ -63,11 +79,11 @@ main section.my_content {
         width: 120px;
     }
 
-    .mainsection.my_content {
-    width: calc(100vw - 120px);
-    }
-
     main aside > nav.my_navbar ul > li > span {
         display: inline;
+    }
+    
+    #content-section {
+        width: calc(100vw - 120px);
     }
 }
