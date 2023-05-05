@@ -43,6 +43,10 @@ main aside > nav.my_navbar ul > li > span {
     background-color: #196bda;
 }
 
+#cards-section {
+    background-color: #f2f3f4;
+}
+
 
 /* Utility */
 .my_bg-grey {
