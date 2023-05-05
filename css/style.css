@@ -53,6 +53,10 @@ main aside > nav.my_navbar ul > li > span {
     background-color: #e2e2e2;
 }
 
+.my_bg-darkblue {
+    background-color: #1557b3;
+}
+
 .my_text-orange {
     color: #fb8d00;
 }
