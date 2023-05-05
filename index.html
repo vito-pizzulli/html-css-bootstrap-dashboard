@@ -26,6 +26,7 @@
     <header>
         <nav class="my_navbar d-flex align-items-center">
             <div class="container-fluid">
+
                 <div class="row bg-white align-items-center py-1">
                     <div class="col-2 col-md-1 ps-1 pe-0">
                         <img src="img/mobile-logo.png" alt="Boolean Mobile Logo" class="my_small-logo">
@@ -76,11 +77,12 @@
             </aside>
 
             <!-- Content Section -->
-            <section id="content-section">
+            <section id="content-section" class="overflow-scroll">
                 <div class="container-fluid p-0">
 
                     <!-- Summary Bar -->
                     <section id="summary-bar" class="text-white p-3">
+
                         <div class="row flex-column flex-md-row">
                             <div class="col mb-3">
                                 <span>Nuovo Studente</span>
@@ -88,12 +90,16 @@
                                     <i class="fa-solid fa-plus"></i>
                                 </button>
 
-                                <!-- Offcanvas Add New Student Form -->
+                                <!-- Offcanvas Form -->
                                 <div class="offcanvas offcanvas-end text-black w-100 my_w-40" tabindex="-1" id="offcanvasForm" aria-labelledby="offcanvasFormLabel">
+
+                                    <!-- Offcanvas Header -->
                                     <div class="offcanvas-header">
                                         <h5 class="offcanvas-title" id="offcanvasFormLabel">Inserisci un nuovo studente</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                     </div>
+
+                                    <!-- Offcanvas Body -->
                                     <div class="offcanvas-body">
                                         <form class="row g-3">
                                             <div class="col-12 col-md-6">
@@ -129,11 +135,12 @@
                                             </div>
                                             <div class="col-12">
                                                 <label for="formFile" class="form-label">Foto</label>
-                                                <input class="form-control" type="file" id="formFile" required>
+                                                <input class="form-control" type="file" id="formFile" required><br>
+                                                <span class="text-danger">Tutti i campi sono obbligatori.</span>
                                             </div>
                                             <div class="col-12">
                                                 <input type="checkbox" required>
-                                                <label for="infoConfirm">Seleziona per accettare i termini e le condizioni del servizio.</label>
+                                                <label for="infoConfirm">Accetto i Termini e le Condizioni del servizio.</label>
                                             </div>
                                             <div class="col-12">
                                                 <button type="submit" class="btn btn-primary">Salva</button>
@@ -152,6 +159,49 @@
                         </div>
                     </section>
                 </div>
+
+                
+                <!-- Cards Section -->
+                <section id="cards-section">
+                    <div class="container py-3">
+
+                        <div class="row">
+                            <div class="col-12 col-md-8">
+                                <div class="card mb-3">
+                                    <div class="card-header">
+                                        <h2>Prossime classi</h2>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora consequatur omnis distinctio non vitae, totam repellat labore. Quisquam quia qui non voluptates odit delectus sed aspernatur nihil fugit voluptatibus laudantium quam maiores quas rem quidem ipsa quo, obcaecati officiis modi. Exercitationem quia sit laudantium tenetur voluptatibus eaque repellat odio sint.</p>
+                                    </div>
+                                </div>
+                                <div class="card mb-3">
+                                    <div class="card-header">
+                                        <h2>F.A.Q.</h2>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora consequatur omnis distinctio non vitae, totam repellat labore. Quisquam quia qui non voluptates odit delectus sed aspernatur nihil fugit voluptatibus laudantium quam maiores quas rem quidem ipsa quo, obcaecati officiis modi. Exercitationem quia sit laudantium tenetur voluptatibus eaque repellat odio sint.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card mb-3">
+                                    <div class="card-header">
+                                        <h2>Todo</h2>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora consequatur omnis distinctio non vitae, totam repellat labore. Quisquam quia qui non voluptates odit delectus sed aspernatur nihil fugit voluptatibus laudantium quam maiores quas rem quidem ipsa quo, obcaecati officiis modi. Exercitationem quia sit laudantium tenetur voluptatibus eaque repellat odio sint.</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="img/stats.jpeg" alt="Column Chart Image" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </section>
         </div>
     </main>
