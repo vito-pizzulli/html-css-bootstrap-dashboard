@@ -3,9 +3,13 @@ li {
     cursor: pointer;
 }
 
-.my_header-navbar {
+header > nav.my_navbar {
     background-color: #f4f5f6;
-    height: 8vh;
+    height: 70px;
+}
+
+header > nav.my_navbar ul > li:not(:last-child) {
+    display: none;
 }
 
 .my_small-logo {
@@ -17,6 +21,18 @@ li {
     display: none;
 }
 
+main aside > nav.my_navbar {
+    background-color: #10263c;
+    background-image: url(../img/sidebar-bg.png);
+    width: 80px;
+    height: calc(100vh - 70px);
+}
+
+main section.my_content {
+    width: calc(100vw - 80px);
+    height: calc(100vh - 70px);
+}
+
 .my_bg-grey {
     background-color: #e2e2e2;
 }
@@ -25,13 +41,9 @@ li {
     color: #fb8d00;
 }
 
-ul > li:not(:last-child) {
-    display: none;
-}
-
 /* LG Layout */
 @media screen and (min-width: 992px) {
-    ul > li:not(:last-child) {
+    header > nav.my_navbar ul > li:not(:last-child) {
         display: inline;
     }
 
@@ -41,5 +53,14 @@ ul > li:not(:last-child) {
 
     .my_logo {
         display: inline;
+    }
+
+    main aside > nav.my_navbar {
+        width: 160px;
+    }
+
+     mainsection.my_content {
+    width: calc(100vw - 80px);
+    height: calc(100vh - 70px);
     }
 }
