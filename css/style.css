@@ -28,6 +28,7 @@ main aside > nav.my_navbar {
 }
 
 header > nav.my_navbar li,
+.my_navbar img,
 main aside > nav.my_navbar li,
 .fa-magnifying-glass,
 .fa-bell {
@@ -43,6 +44,10 @@ main aside > nav.my_navbar li:hover,
 .fa-bell:hover {
     color: #fb8d00;
     transform: scale(1.4)
+}
+
+.my_navbar img:hover {
+    transform: scale(1.1);
 }
 
 #content-section {
