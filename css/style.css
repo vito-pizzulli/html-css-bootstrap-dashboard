@@ -23,6 +23,10 @@ header > nav.my_navbar ul > li:not(:last-child) {
     display: none;
 }
 
+.fa-magnifying-glass {
+    cursor: pointer;
+}
+
 main aside > nav.my_navbar {
     background-color: #10263c;
     background-image: url(../img/sidebar-bg.png);
