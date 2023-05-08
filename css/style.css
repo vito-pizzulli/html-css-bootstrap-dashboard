@@ -74,10 +74,6 @@ main aside > nav.my_navbar ul > li > span {
     aspect-ratio: 1;
 }
 
-.my_small-font {
-    font-size: .9rem;
-}
-
 /* Responsive Layout */
 /* MD Layout (from 768px to 992 px */
 @media screen and (min-width: 768px) {
