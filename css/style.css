@@ -10,17 +10,9 @@ header > nav.my_navbar {
     min-width: 300px;
 }
 
-header > nav.my_navbar ul > li:not(:last-child) {
-    display: none;
-}
-
 .my_small-logo {
     width: 45px;
     aspect-ratio: 1;
-}
-
-.my_logo {
-    display: none;
 }
 
 .fa-magnifying-glass {
@@ -32,10 +24,6 @@ main aside > nav.my_navbar {
     background-image: url(../img/sidebar-bg.png);
     width: 60px;
     height: calc(100vh - 70px);
-}
-
-main aside > nav.my_navbar ul > li > span {
-    display: none;
 }
 
 #content-section {
@@ -84,24 +72,8 @@ main aside > nav.my_navbar ul > li > span {
 
 /* LG Layout (from 992px to higher resolutions */
 @media screen and (min-width: 992px) {
-    header > nav.my_navbar ul > li:not(:last-child) {
-        display: inline;
-    }
-
-    .my_small-logo {
-        display: none;
-    }
-
-    .my_logo {
-        display: inline;
-    }
-
     main aside > nav.my_navbar {
         width: 120px;
-    }
-
-    main aside > nav.my_navbar ul > li > span {
-        display: inline;
     }
     
     #content-section {
