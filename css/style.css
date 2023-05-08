@@ -61,8 +61,21 @@ main aside > nav.my_navbar ul > li > span {
     background-color: #1557b3;
 }
 
+.my_bg-orange {
+    background-color: #f16451;
+}
+
 .my_text-orange {
     color: #fb8d00;
+}
+
+.my_icon {
+    width: 40px;
+    aspect-ratio: 1;
+}
+
+.my_small-font {
+    font-size: .9rem;
 }
 
 /* Responsive Layout */
