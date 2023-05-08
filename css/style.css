@@ -9,24 +9,13 @@ header > nav.my_navbar {
     min-width: 300px;
 }
 
-header > nav.my_navbar li {
-    transition: color .3s;
-}
-
-header > nav.my_navbar li:hover {
-    color: #196bda;
-}
-
 .my_small-logo {
     width: 45px;
     aspect-ratio: 1;
 }
 
 .my_navbar li,
-.my_navbar img {
-    cursor: pointer;
-}
-
+.my_navbar img,
 .fa-magnifying-glass {
     cursor: pointer;
 }
@@ -38,17 +27,29 @@ main aside > nav.my_navbar {
     height: calc(100vh - 70px);
 }
 
+header > nav.my_navbar li,
+.fa-magnifying-glass {
+    transition: color .5s;
+}
+
 main aside > nav.my_navbar li { 
-    transition: background-color .3s;
+    transition: all .5s;
+}
+
+header > nav.my_navbar li:hover,
+.fa-magnifying-glass:hover,
+main aside > nav.my_navbar li:hover {
+    color: #00df6b;
 }
 
 main aside > nav.my_navbar li:hover {
-    background-color: rgb(255, 255, 255, .3);
+    background-color: rgb(255, 255, 255, .2);
 }
 
 #content-section {
     width: calc(100vw - 60px);
     height: calc(100vh - 70px);
+    cursor: default;
 }
 
 #summary-bar {
@@ -62,6 +63,10 @@ main aside > nav.my_navbar li:hover {
 .my_icon {
     width: 38px;
     aspect-ratio: 1;
+}
+
+.card-body li:hover {
+    background-color: #f2f3f4;
 }
 
 
