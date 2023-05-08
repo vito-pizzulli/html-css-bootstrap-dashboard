@@ -42,6 +42,11 @@ main aside > nav.my_navbar {
     background-color: #f2f3f4;
 }
 
+.my_icon {
+    width: 40px;
+    aspect-ratio: 1;
+}
+
 
 /* Utility */
 .my_bg-grey {
@@ -60,18 +65,16 @@ main aside > nav.my_navbar {
     color: #fb8d00;
 }
 
-.my_icon {
-    width: 40px;
-    aspect-ratio: 1;
-}
 
 /* Responsive Layout */
+
 /* MD Layout (from 768px to 992 px */
 @media screen and (min-width: 768px) {
     #content-section div.row > div.col:first-child {
         order: 1;
     }
 }
+
 
 /* LG Layout (from 992px to higher resolutions */
 @media screen and (min-width: 992px) {
@@ -85,5 +88,36 @@ main aside > nav.my_navbar {
 
     .my_w-40 {
         width: 40% !important;
+    }
+}
+
+
+/* 2K Layout (from 2560px to higher resolutions */
+@media screen and (min-width: 2560px) {
+    html {
+        font-size: 40px;
+    }
+
+    header > nav.my_navbar {
+        height: 150px;
+    }
+
+    main aside > nav.my_navbar {
+        width: 300px;
+        height: calc(100vh - 150px);
+    }
+    
+    #content-section {
+        width: calc(100vw - 300px);
+        height: calc(100vh - 150px);
+    }
+
+    .my_logo {
+        width: 300px;
+    }
+
+    .my_icon {
+        width: 100px;
+        aspect-ratio: 1;
     }
 }
