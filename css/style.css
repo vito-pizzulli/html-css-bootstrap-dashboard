@@ -1,7 +1,6 @@
 /* Element Properties */
 li {
     list-style-type: none;
-    cursor: pointer;
 }
 
 header > nav.my_navbar {
@@ -13,6 +12,10 @@ header > nav.my_navbar {
 .my_small-logo {
     width: 45px;
     aspect-ratio: 1;
+}
+
+.my_navbar li {
+    cursor: pointer;
 }
 
 .fa-magnifying-glass {
