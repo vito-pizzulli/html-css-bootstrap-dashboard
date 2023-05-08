@@ -9,12 +9,21 @@ header > nav.my_navbar {
     min-width: 300px;
 }
 
+header > nav.my_navbar li {
+    transition: color .3s;
+}
+
+header > nav.my_navbar li:hover {
+    color: #196bda;
+}
+
 .my_small-logo {
     width: 45px;
     aspect-ratio: 1;
 }
 
-.my_navbar li {
+.my_navbar li,
+.my_navbar img {
     cursor: pointer;
 }
 
@@ -27,6 +36,14 @@ main aside > nav.my_navbar {
     background-image: url(../img/sidebar-bg.png);
     width: 60px;
     height: calc(100vh - 70px);
+}
+
+main aside > nav.my_navbar li { 
+    transition: background-color .3s;
+}
+
+main aside > nav.my_navbar li:hover {
+    background-color: rgb(255, 255, 255, .3);
 }
 
 #content-section {
