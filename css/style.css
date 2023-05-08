@@ -43,7 +43,7 @@ main aside > nav.my_navbar {
 }
 
 .my_icon {
-    width: 40px;
+    width: 38px;
     aspect-ratio: 1;
 }
 
@@ -66,7 +66,7 @@ main aside > nav.my_navbar {
 }
 
 
-/* Responsive Layout */
+/* Responsive Layouts */
 
 /* MD Layout (from 768px to 992 px */
 @media screen and (min-width: 768px) {
@@ -95,6 +95,40 @@ main aside > nav.my_navbar {
 /* 2K Layout (from 2560px to higher resolutions */
 @media screen and (min-width: 2560px) {
     html {
+        font-size: 30px;
+    }
+
+    header > nav.my_navbar {
+        height: 100px;
+    }
+
+    main aside > nav.my_navbar {
+        width: 250px;
+        height: calc(100vh - 100px);
+    }
+    
+    input[type=checkbox] {
+        transform: scale(1.5);
+    }
+    
+    #content-section {
+        width: calc(100vw - 250px);
+        height: calc(100vh - 100px);
+    }
+
+    .my_logo {
+        width: 300px;
+    }
+
+    .my_icon {
+        width: 70px;
+        aspect-ratio: 1;
+    }
+}
+
+/* 4K Layout (from 3840px to higher resolutions */
+@media screen and (min-width: 3840px) {
+    html {
         font-size: 40px;
     }
 
@@ -106,18 +140,18 @@ main aside > nav.my_navbar {
         width: 300px;
         height: calc(100vh - 150px);
     }
+
+    input[type=checkbox] {
+        transform: scale(2);
+    }
     
     #content-section {
         width: calc(100vw - 300px);
         height: calc(100vh - 150px);
     }
 
-    .my_logo {
-        width: 300px;
-    }
-
     .my_icon {
-        width: 100px;
+        width: 90px;
         aspect-ratio: 1;
     }
 }
