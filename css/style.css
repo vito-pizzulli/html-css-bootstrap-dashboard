@@ -28,22 +28,21 @@ main aside > nav.my_navbar {
 }
 
 header > nav.my_navbar li,
-.fa-magnifying-glass {
-    transition: color .5s;
-}
-
-main aside > nav.my_navbar li { 
+main aside > nav.my_navbar li,
+.fa-magnifying-glass,
+.fa-bell {
     transition: all .5s;
 }
 
 header > nav.my_navbar li:hover,
-.fa-magnifying-glass:hover,
-main aside > nav.my_navbar li:hover {
+main aside > nav.my_navbar li:hover,
+.fa-magnifying-glass:hover {
     color: #00df6b;
 }
 
-main aside > nav.my_navbar li:hover {
-    background-color: rgb(255, 255, 255, .2);
+.fa-bell:hover {
+    color: #fb8d00;
+    transform: scale(1.4)
 }
 
 #content-section {
@@ -81,10 +80,6 @@ main aside > nav.my_navbar li:hover {
 
 .my_bg-orange {
     background-color: #f16451;
-}
-
-.my_text-orange {
-    color: #fb8d00;
 }
 
 
